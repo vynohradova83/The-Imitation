@@ -46,7 +46,7 @@ margin-bottom:15px;
 width:250px;
 
 filter:
-    hue-rotate(85deg)
+    hue-rotate(95deg)
     saturate(130%)
     drop-shadow(10px 10px 8px rgba(0,0,0,.7));
 
@@ -145,8 +145,6 @@ color:white;
 font-size:32px;
 text-shadow:
     3px 3px 5px black;
-
-}
 
 }
 
