@@ -148,17 +148,25 @@ text-shadow:
 
 }
 
+.football-card{
+    overflow:hidden;
+}
+
 .football-wrapper{
     position:relative;
 
-    width:320px;
+    width:260px;
+
+    height:180px;
 
     margin:auto;
 }
 
 .field{
     width:100%;
-    display:block;
+    height:100%;
+
+    object-fit:cover;
 
     filter:grayscale(100%);
 }
@@ -169,58 +177,46 @@ text-shadow:
 }
 
 .frame img{
-    width:300px;
+    width:260px;
     filter:grayscale(100%);
 }
 
 .top{
-    left:-20px;
-    top:-30px;
+    top:-22px;
+    left:-15px;
 
-    width:360px;
-    height:40px;
-}
-
-.top img{
-    transform:
-        translateY(0);
+    width:290px;
+    height:28px;
 }
 
 .bottom{
-    left:-20px;
-    bottom:-30px;
+    bottom:-22px;
+    left:-15px;
 
-    width:360px;
-    height:40px;
+    width:290px;
+    height:28px;
 }
 
 .bottom img{
-    transform:
-        translateY(255px);
+    transform:translateY(232px);
 }
 
 .left{
-    left:-35px;
     top:0;
+    left:-22px;
 
-    width:35px;
+    width:28px;
     height:180px;
 }
 
-.left img{
-    transform:
-        translateX(0);
-}
-
 .right{
-    right:-35px;
     top:0;
+    right:-22px;
 
-    width:35px;
+    width:28px;
     height:180px;
 }
 
 .right img{
-    transform:
-        translateX(265px);
+    transform:translateX(232px);
 }
