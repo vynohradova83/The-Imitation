@@ -46,10 +46,7 @@ margin-bottom:15px;
 width:250px;
 
 filter:
-    hue-rotate(75deg)
-    saturate(130%);
-filter:
-    hue-rotate(75deg)
+    hue-rotate(85deg)
     saturate(130%)
     drop-shadow(10px 10px 8px rgba(0,0,0,.7));
 
@@ -153,89 +150,79 @@ text-shadow:
 
 }
 
-.football-board {
-  display: grid;
-  grid-template-columns: 50px 1fr 50px; 
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.football-wrapper{
+    position:relative;
+
+    width:320px;
+
+    margin:auto;
 }
 
-.border-top {
-  grid-column: 1 / span 3;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); 
+.field{
+    width:100%;
+    display:block;
+
+    filter:grayscale(100%);
 }
 
-.border-left {
-  grid-column: 1;
-  display: flex;
-  flex-direction: column;
+.frame{
+    position:absolute;
+    overflow:hidden;
 }
 
-.field-container {
-  grid-column: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #4d4d4d; 
-  padding: 5px; 
+.frame img{
+    width:300px;
+    filter:grayscale(100%);
 }
 
-.football-field {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 600px; 
+.top{
+    left:-20px;
+    top:-30px;
+
+    width:360px;
+    height:40px;
 }
 
-.border-right {
-  grid-column: 3;
-  display: flex;
-  flex-direction: column;
+.top img{
+    transform:
+        translateY(0);
 }
 
-.border-bottom {
-  grid-column: 1 / span 3;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+.bottom{
+    left:-20px;
+    bottom:-30px;
+
+    width:360px;
+    height:40px;
 }
 
-.cell {
-  aspect-ratio: 1 / 1; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  background-color: #fff;
-
-  border: 3px solid #333; 
+.bottom img{
+    transform:
+        translateY(255px);
 }
 
-.border-top .cell, .border-bottom .cell {
-  margin-right: -3px;
-}
-.border-top .cell:last-child, .border-bottom .cell:last-child {
-  margin-right: 0;
-}
-.border-left .cell, .border-right .cell {
-  margin-bottom: -3px;
-}
-.border-left .cell:last-child, .border-right .cell:last-child {
-  margin-bottom: 0;
+.left{
+    left:-35px;
+    top:0;
+
+    width:35px;
+    height:180px;
 }
 
-.border-left, .border-right {
-  margin-top: -3px;
-  margin-bottom: -3px;
+.left img{
+    transform:
+        translateX(0);
 }
 
-.cell.x {
-  color: #222;
+.right{
+    right:-35px;
+    top:0;
+
+    width:35px;
+    height:180px;
 }
-.cell.o {
-  color: #444;
+
+.right img{
+    transform:
+        translateX(265px);
 }
